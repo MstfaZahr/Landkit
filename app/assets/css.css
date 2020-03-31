@@ -87,7 +87,12 @@ body {
 
 .button-info {
     background-color: var(--info);
-    color: #506690;
+    color: var(--text-seconday);
+}
+
+.dark .button-info {
+    background-color: var(--text-seconday);
+    color: var(--info);
 }
 
 /* --- WILL BE EDITED --- */
@@ -232,17 +237,13 @@ body {
 }
 
 #form .tics span {
-    background-color: #e8f5f3;
+    background-color: rgba(66, 186, 150, .1);
     border-radius: 50%;
     padding: 5px 5px;
 }
 
 #form i {
     color: var(--success);
-}
-
-.dark #form .tics span {
-    background-color: #5d6261;
 }
 
 /* Bootstrap */
@@ -400,6 +401,11 @@ body {
     font-family: 'hk_groteskmedium_legacy';
 }
 
+.dark #pricing .text-uppercase {
+    background-color: #1036a3;
+    color: #8ba6f4;
+}
+
 #pricing h4 {
     font-size: 2rem;
     color: var(--text-primary);
@@ -420,13 +426,9 @@ body {
 }
 
 #pricing .badge {
-    background-color: #e8f5f3;
+    background-color: rgba(66, 186, 150, .1);
     border-radius: 50%;
     padding: 5px 5px;
-}
-
-.dark #pricing .badge {
-    background-color: #5d6261;
 }
 
 #pricing i {

@@ -1,43 +1,36 @@
-* {
-    font-family: 'hk_groteskregular';
-    box-sizing: border-box;
-    transition: color 0.5s cubic-bezier(0.22, 0.61, 0.36, 1), background-color 0.5s cubic-bezier(0.22, 0.61, 0.36, 1)
-}
-
-#dark{
-    cursor: pointer;
-}
-
-#dark-border{
-    transition: all 0.5s cubic-bezier(0.22, 0.61, 0.36, 1);
-}
-
-.dark-enabled{
-    fill: white;
-}
+/* Global Styling */
 
 :root {
     --primary: #335eea;
-    --secondary: #d9e2ef;
-    --info: #eaeffd;
+    --secondary: #eaeffd;
+    --info: #d9e2ef;
     --success: #42ba96;
     --text-primary: black;
     --text-seconday: #869ab8;
-    --text-info: #506690;
     --text-opposite: white;
     --shadow: rgba(0, 0, 0, 0.1);
 }
 
-.dark{
+.dark {
     --primary: #335eea;
-    --secondary: #d9e2ef;
-    --info: #eaeffd;
+    --secondary: #eaeffd;
+    --info: #d9e2ef;
     --success: #42ba96;
     --text-primary: white;
     --text-seconday: #869ab8;
-    --text-info: #506690;
     --text-opposite: #1b2a4e;
     --shadow: rgba(255, 255, 255, 0.1);
+}
+
+::selection {
+    background-color: var(--primary);
+    color: white;
+}
+
+* {
+    font-family: 'hk_groteskregular';
+    box-sizing: border-box;
+    transition: color 0.5s cubic-bezier(0.22, 0.61, 0.36, 1), background-color 0.5s cubic-bezier(0.22, 0.61, 0.36, 1), border-color 0.5s cubic-bezier(0.22, 0.61, 0.36, 1), fill 0.5s cubic-bezier(0.22, 0.61, 0.36, 1), cx 0.5s cubic-bezier(0.22, 0.61, 0.36, 1), box-shadow 0.5s cubic-bezier(0.22, 0.61, 0.36, 1);
 }
 
 body {
@@ -62,12 +55,26 @@ body {
     color: white;
 }
 
+.button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0px 5px 20px 0px var(--shadow);
+}
+
 .button-primary {
     background-color: var(--primary);
 }
 
 .button-primary:hover {
     background-color: #1746e0;
+}
+
+.button-secondary {
+    background-color: var(--secondary);
+    color: var(--primary);
+}
+
+.button-secondary:hover {
+    background-color: #e1e7fc;
 }
 
 .button-success {
@@ -80,17 +87,35 @@ body {
 
 .button-info {
     background-color: var(--info);
-    color: var(--primary);
+    color: #506690;
 }
 
-.button-info:hover {
-    background-color: #e1e7fc;
+/* --- WILL BE EDITED --- */
+
+#dark {
+    cursor: pointer;
 }
 
-.button:hover {
-    transform: translateY(-3px);
-    box-shadow: 0px 5px 20px 0px var(--shadow);
+#dark-border {
+    transition: all 0.5s cubic-bezier(0.22, 0.61, 0.36, 1);
 }
+
+.dark-enabled {
+    fill: white;
+}
+
+@keyframes fadein {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* --- WILL BE EDITED --- */
 
 /* Header */
 
@@ -216,6 +241,10 @@ body {
     color: var(--success);
 }
 
+.dark #form .tics span {
+    background-color: #5d6261;
+}
+
 /* Bootstrap */
 
 #bootstrap svg {
@@ -251,7 +280,7 @@ body {
     transform: rotateY(-35deg) rotateX(15deg);
     max-width: 100%;
     border-radius: 10px;
-    box-shadow: 0 0 40px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 40px var(--shadow);
 }
 
 #bootstrap .col-md-5 div {
@@ -259,6 +288,153 @@ body {
     perspective-origin: left center;
     perspective: 1500px;
     transform-style: preserve-3d;
+}
+
+/* Focus */
+
+#focus h3 {
+    font-size: 2rem;
+    color: var(--text-primary);
+}
+
+#focus h3 span {
+    color: var(--primary);
+}
+
+#focus p {
+    font-size: 1.2rem;
+    color: var(--text-seconday);
+    margin: 0;
+    padding-bottom: 0.4rem;
+}
+
+#focus .px-4 {
+    border-left: 1px solid var(--secondary);
+    border-right: 1px solid var(--secondary);
+}
+
+.dark #focus .px-4 {
+    border-color: var(--shadow);
+}
+
+#focus h5 {
+    color: var(--text-primary);
+}
+
+#focus h5 span {
+    color: var(--text-primary);
+}
+
+/* Pricing */
+
+#pricing {
+    font-size: 1.1rem;
+}
+
+#pricing h3 {
+    font-size: 2.3rem;
+    color: var(--text-primary);
+}
+
+#pricing p {
+    color: var(--text-seconday);
+}
+
+#pricing .toggle p {
+    font-size: 1.4rem;
+    color: var(--text-seconday);
+    max-width: 690px;
+}
+
+#pricing .toggle span {
+    color: var(--text-seconday);
+    font-size: 1.2rem;
+}
+
+#pricing .annual-enabled-button {
+    cx: 11;
+}
+
+#pricing .annual-enabled-bg {
+    fill: #d9e2ef;
+}
+
+.dark #pricing .annual-enabled-bg {
+    fill: #575a60;
+}
+
+#pricing .pricing-card {
+    transform: scaleX(1.06);
+    border-radius: 7px;
+    overflow: hidden;
+    box-shadow: 0 0 40px 0px var(--shadow);
+}
+
+#pricing .pricing-standard {
+    transform-origin: left;
+    z-index: 1;
+    position: relative;
+    background-color: var(--text-opposite);
+}
+
+#pricing .pricing-enterprice {
+    transform-origin: right;
+    height: 500px;
+}
+
+#pricing button {
+    border-radius: unset;
+}
+
+#pricing button:hover {
+    transform: unset;
+    box-shadow: unset;
+}
+
+#pricing .text-uppercase {
+    background-color: var(--secondary);
+    color: var(--primary);
+    border-radius: 30px;
+    font-size: 0.8rem;
+    letter-spacing: 1px;
+    font-family: 'hk_groteskmedium_legacy';
+}
+
+#pricing h4 {
+    font-size: 2rem;
+    color: var(--text-primary);
+}
+
+#pricing h4 span {
+    font-size: 4rem;
+    color: var(--text-primary);
+}
+
+#pricing sup {
+    top: -1em;
+    color: var(--text-primary);
+}
+
+#pricing .tics div {
+    color: var(--text-primary);
+}
+
+#pricing .badge {
+    background-color: #e8f5f3;
+    border-radius: 50%;
+    padding: 5px 5px;
+}
+
+.dark #pricing .badge {
+    background-color: #5d6261;
+}
+
+#pricing i {
+    color: var(--success);
+}
+
+#pricing .pricing-enterprice p {
+    font-size: 1.3rem;
 }
 
 /* Small Sizes */
@@ -286,6 +462,10 @@ body {
     #bootstrap .col-md-5 div {
         width: 150%;
     }
+    /* Focus */
+    #focus h3 {
+        font-size: 1.47rem;
+    }
 }
 
 @media (max-width: 767px) {
@@ -295,6 +475,16 @@ body {
     }
     #bootstrap .col-md-5 div {
         width: 100%;
+    }
+    /* Pricing */
+    #pricing h3 {
+        font-size: 1.8rem;
+    }
+    #pricing .pricing-card {
+        transform: unset;
+    }
+    #pricing .pricing-enterprice {
+        height: 400px;
     }
 }
 

@@ -1,3 +1,9 @@
+AOS.init({
+    duration: 1200,
+    easing: 'ease-out-back',
+    once: true,
+});
+
 const darkIcon = document.querySelector("#dark")
 const body = document.querySelector("body")
 const darkIconBorder = document.querySelector("#dark-border")

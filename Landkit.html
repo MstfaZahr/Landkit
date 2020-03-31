@@ -7,6 +7,7 @@
     <title>Landkit</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="app/assets/css.css">
 
 </head>
@@ -34,7 +35,7 @@
         <div class="container py-5">
             <div class="max m-auto">
                 <div class="row mb-5">
-                    <div
+                    <div data-aos="fade-up"
                         class="col-12 col-md-7 order-2 order-md-1 text-center text-md-left d-flex flex-column justify-content-center">
                         <h1>
                             Welcome to <span>Landkit</span>.
@@ -50,12 +51,12 @@
                             <button class="button button-secondary py-3 px-4">Documentation</button>
                         </div>
                     </div>
-                    <div class="col-12 col-md-5 d-flex align-items-center order-1 order-md-2 mb-4 mb-md-0">
+                    <div data-aos="fade-up" data-aos-delay="100" class="col-12 col-md-5 d-flex align-items-center order-1 order-md-2 mb-4 mb-md-0">
                         <img src="app/pics/welcome.png">
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-12 col-md-4 d-flex flex-column justify-content-start">
+                    <div data-aos="fade-up" class="col-12 col-md-4 d-flex flex-column justify-content-start">
                         <svg width="24px" height="24px" viewBox="0 0 24 24">
                             <use href="#svg-toggles" />
                         </svg>
@@ -63,7 +64,7 @@
                         <p>Landkit is built to make your life easier. Variables, build tooling, documentation, and
                             reusable components.</p>
                     </div>
-                    <div class="col-12 col-md-4 d-flex flex-column justify-content-start my-4 my-md-0">
+                    <div data-aos="fade-up" data-aos-delay="100" class="col-12 col-md-4 d-flex flex-column justify-content-start my-4 my-md-0">
                         <svg width="24px" height="24px" viewBox="0 0 24 24">
                             <use href="#svg-layout" />
                         </svg>
@@ -71,7 +72,7 @@
                         <p>Designed with the latest design trends in mind. Landkit feels modern, minimal, and beautiful.
                         </p>
                     </div>
-                    <div class="col-12 col-md-4 d-flex flex-column justify-content-start">
+                    <div data-aos="fade-up" data-aos-delay="200" class="col-12 col-md-4 d-flex flex-column justify-content-start">
                         <svg width="24px" height="24px" viewBox="0 0 24 24">
                             <use href="#svg-code" />
                         </svg>
@@ -131,7 +132,7 @@
         <div class="container py-5">
             <div class="max m-auto">
                 <div class="row">
-                    <div class="col-12 col-md-6 order-2 order-md-1">
+                    <div data-aos="fade-right" class="col-12 col-md-6 order-2 order-md-1">
                         <div class="card">
                             <img src="app/pics/form.jpg" class="card-img-top">
                             <div class="card-body">
@@ -144,7 +145,7 @@
                             </div>
                         </div>
                     </div>
-                    <div
+                    <div data-aos="fade-left"
                         class="col-12 col-md-6 order-1 order-md-2 d-flex flex-column justify-content-center mb-3 mb-md-0">
                         <h3>
                             The most useful resource
@@ -184,7 +185,7 @@
         <div class="container py-5">
             <div class="max m-auto">
                 <div class="row">
-                    <div class="col-12 col-md-7 col-lg-6 d-flex flex-column justify-content-center mb-5 mb-md-0">
+                    <div data-aos="fade-right" class="col-12 col-md-7 col-lg-6 d-flex flex-column justify-content-center mb-5 mb-md-0">
                         <h3>
                             We have lots of experience
                             <br>
@@ -217,7 +218,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-12 col-md-5 col-lg-6 m-auto">
+                    <div data-aos="fade-left" class="col-12 col-md-5 col-lg-6 m-auto">
                         <div>
                             <img src="app/pics/bootstrap.jpg">
                         </div>
@@ -298,8 +299,8 @@
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-12 col-md-6">
-                        <div
+                    <div data-aos="fade-up" style="z-index: 1;" class="col-12 col-md-6">
+                        <div 
                             class="pricing-card pricing-standard d-flex flex-column align-items-center pt-5 mb-5 mb-md-0">
                             <div class="px-2 py-1 mb-4 pill">standard</div>
                             <h4>
@@ -331,8 +332,8 @@
                             <button class="button button-primary w-100 py-3">Get it now</button>
                         </div>
                     </div>
-                    <div class="col-12 col-md-6 d-flex">
-                        <div
+                    <div data-aos="fade-up" data-aos-delay="200" class="col-12 col-md-6 d-flex">
+                        <div 
                             class="pricing-card pricing-enterprice d-flex flex-column align-items-center justify-content-between my-auto pt-5">
                             <div class="px-2 py-1 pill">enterprice</div>
                             <p class="text-center px-5">We offer variable pricing with discounts for larger
@@ -404,9 +405,11 @@
                 <div class="text-center">
                     <div class="pill py-1 px-2 mx-auto mt-5 mb-3">get started</div>
                     <h3>Get Landkit and save your time.</h3>
-                    <p class="mx-auto mt-4 mb-5">Stop wasting time trying to do it the "right way" and build a site from scratch. Landkit is
+                    <p class="mx-auto mt-4 mb-5">Stop wasting time trying to do it the "right way" and build a site from
+                        scratch. Landkit is
                         faster, easier, and you still have complete control.</p>
-                    <button class="button button-success py-3 px-4">Buy it now <i class="fas fa-arrow-right ml-2"></i></button>
+                    <button class="button button-success py-3 px-4">Buy it now <i
+                            class="fas fa-arrow-right ml-2"></i></button>
                 </div>
             </div>
         </div>
@@ -699,6 +702,7 @@
         integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
         crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/614d640365.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="app/assets/javascript.js"></script>
 
 </body>

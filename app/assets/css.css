@@ -826,12 +826,12 @@ body {
     }
     #navbar .dropdowns {
         position: absolute;
-        bottom: -560px;
+        bottom: -535px;
         display: flex;
         flex-direction: column;
         align-items: flex-start;
         overflow: scroll;
-        height: 550px;
+        height: 525px;
         background-color: var(--text-opposite);
         width: 366px;
         box-shadow: 0 0 50px var(--shadow);

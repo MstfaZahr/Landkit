@@ -27,6 +27,22 @@
     color: white;
 }
 
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--secondary);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--primary);
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #1746e0;
+}
+
 * {
     font-family: 'hk_groteskregular';
     box-sizing: border-box;
@@ -121,8 +137,6 @@ body {
 }
 
 /* --- WILL BE EDITED --- */
-
-
 
 /* --- WILL BE EDITED --- */
 
@@ -819,7 +833,7 @@ body {
 
 @media (max-width: 991px) {
     /* Navigation Bar */
-    #navbar .button-primary{
+    #navbar .button-primary {
         margin-left: auto;
     }
     #navbar .max {
@@ -840,10 +854,10 @@ body {
         right: -10px;
         animation: show-dropdowns 0.2s;
     }
-    #navbar .dropdowns-hidden{
+    #navbar .dropdowns-hidden {
         display: none;
     }
-    #navbar .my-dropdown{
+    #navbar .my-dropdown {
         text-align: left;
     }
     #navbar .my-dropdown>a {
@@ -869,10 +883,10 @@ body {
         border-top: unset;
         border-bottom: unset;
     }
-    #navbar .dropdown-account a{
+    #navbar .dropdown-account a {
         margin-right: 2rem;
     }
-    #navbar .dropdown-account a:nth-last-child(1){
+    #navbar .dropdown-account a:nth-last-child(1) {
         margin-right: 0;
     }
     #navbar .dropdown-pages .my-dropdown-menu .row {
@@ -958,6 +972,7 @@ body {
         opacity: 1;
     }
 }
+
 @keyframes show-dropdowns {
     0% {
         opacity: 0;

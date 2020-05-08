@@ -51,7 +51,7 @@
 * {
     font-family: 'hk_groteskregular';
     -webkit-box-sizing: border-box;
-            box-sizing: border-box;
+    box-sizing: border-box;
     -webkit-transition: color 0.5s cubic-bezier(0.22, 0.61, 0.36, 1), background-color 0.5s cubic-bezier(0.22, 0.61, 0.36, 1), border-color 0.5s cubic-bezier(0.22, 0.61, 0.36, 1), fill 0.5s cubic-bezier(0.22, 0.61, 0.36, 1), cx 0.5s cubic-bezier(0.22, 0.61, 0.36, 1), -webkit-box-shadow 0.5s cubic-bezier(0.22, 0.61, 0.36, 1);
     transition: color 0.5s cubic-bezier(0.22, 0.61, 0.36, 1), background-color 0.5s cubic-bezier(0.22, 0.61, 0.36, 1), border-color 0.5s cubic-bezier(0.22, 0.61, 0.36, 1), fill 0.5s cubic-bezier(0.22, 0.61, 0.36, 1), cx 0.5s cubic-bezier(0.22, 0.61, 0.36, 1), -webkit-box-shadow 0.5s cubic-bezier(0.22, 0.61, 0.36, 1);
     -o-transition: color 0.5s cubic-bezier(0.22, 0.61, 0.36, 1), background-color 0.5s cubic-bezier(0.22, 0.61, 0.36, 1), border-color 0.5s cubic-bezier(0.22, 0.61, 0.36, 1), fill 0.5s cubic-bezier(0.22, 0.61, 0.36, 1), cx 0.5s cubic-bezier(0.22, 0.61, 0.36, 1), box-shadow 0.5s cubic-bezier(0.22, 0.61, 0.36, 1);
@@ -91,10 +91,10 @@ body {
 
 .button:hover {
     -webkit-transform: translateY(-3px);
-        -ms-transform: translateY(-3px);
-            transform: translateY(-3px);
+    -ms-transform: translateY(-3px);
+    transform: translateY(-3px);
     -webkit-box-shadow: 0px 5px 20px 0px var(--shadow);
-            box-shadow: 0px 5px 20px 0px var(--shadow);
+    box-shadow: 0px 5px 20px 0px var(--shadow);
 }
 
 .button-primary {
@@ -165,7 +165,7 @@ body {
     z-index: 2;
     background-color: var(--text-opposite);
     -webkit-box-shadow: 0 0 10px var(--shadow);
-            box-shadow: 0 0 10px var(--shadow);
+    box-shadow: 0 0 10px var(--shadow);
 }
 
 #navbar .max {
@@ -209,8 +209,8 @@ body {
 
 #navbar .dropdowns {
     -webkit-box-flex: 1;
-        -ms-flex: 1;
-            flex: 1;
+    -ms-flex: 1;
+    flex: 1;
     height: 35px;
 }
 
@@ -235,10 +235,10 @@ body {
     width: -moz-max-content;
     width: max-content;
     -webkit-transform: translate(-50%);
-        -ms-transform: translate(-50%);
-            transform: translate(-50%);
+    -ms-transform: translate(-50%);
+    transform: translate(-50%);
     -webkit-box-shadow: 0 5px 30px var(--shadow);
-            box-shadow: 0 5px 30px var(--shadow);
+    box-shadow: 0 5px 30px var(--shadow);
     padding: 1.75rem;
     display: none;
     background-color: var(--text-opposite);
@@ -265,7 +265,7 @@ body {
     display: -ms-flexbox;
     display: flex;
     -webkit-animation: show 0.2s;
-            animation: show 0.2s;
+    animation: show 0.2s;
 }
 
 #navbar .my-dropdown-menu:hover {
@@ -277,11 +277,11 @@ body {
 #navbar .dropdown-account .my-dropdown-menu {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
     -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: flex-start;
+    -ms-flex-align: start;
+    align-items: flex-start;
 }
 
 #navbar .dropdown-pages .my-dropdown-menu .row {
@@ -294,11 +294,11 @@ body {
     display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
     -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: flex-start;
+    -ms-flex-align: start;
+    align-items: flex-start;
     min-width: -webkit-max-content;
     min-width: -moz-max-content;
     min-width: max-content;
@@ -316,8 +316,8 @@ body {
 
 #navbar .dropdown-documentation .pill {
     -ms-flex-item-align: center;
-        -ms-grid-row-align: center;
-        align-self: center;
+    -ms-grid-row-align: center;
+    align-self: center;
 }
 
 #navbar .dropdown-documentation .flex-column a:hover {
@@ -371,11 +371,11 @@ body {
     display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
     -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: flex-start;
+    -ms-flex-align: start;
+    align-items: flex-start;
     min-width: -webkit-max-content;
     min-width: -moz-max-content;
     min-width: max-content;
@@ -444,7 +444,7 @@ body {
     background-color: var(--text-opposite);
     border: none;
     -webkit-box-shadow: 0 5px 30px 0px var(--shadow);
-            box-shadow: 0 5px 30px 0px var(--shadow);
+    box-shadow: 0 5px 30px 0px var(--shadow);
     -webkit-transition: background-color 0.5s cubic-bezier(0.22, 0.61, 0.36, 1), -webkit-box-shadow 0.2s, -webkit-transform 0.2s;
     transition: background-color 0.5s cubic-bezier(0.22, 0.61, 0.36, 1), -webkit-box-shadow 0.2s, -webkit-transform 0.2s;
     -o-transition: box-shadow 0.2s, transform 0.2s, background-color 0.5s cubic-bezier(0.22, 0.61, 0.36, 1);
@@ -456,15 +456,15 @@ body {
 
 #form .card:hover {
     -webkit-box-shadow: 0 5px 50px 5px var(--shadow);
-            box-shadow: 0 5px 50px 5px var(--shadow);
+    box-shadow: 0 5px 50px 5px var(--shadow);
     -webkit-transform: translateY(-5px);
-        -ms-transform: translateY(-5px);
-            transform: translateY(-5px);
+    -ms-transform: translateY(-5px);
+    transform: translateY(-5px);
 }
 
 #form .card img {
     -webkit-clip-path: ellipse(150% 100% at 50% 0%);
-            clip-path: ellipse(150% 100% at 50% 0%);
+    clip-path: ellipse(150% 100% at 50% 0%);
 }
 
 #form .card-body {
@@ -552,7 +552,7 @@ body {
 
 #form .blink {
     -webkit-animation: blink 0.5s ease-in-out infinite;
-            animation: blink 0.5s ease-in-out infinite;
+    animation: blink 0.5s ease-in-out infinite;
 }
 
 /* Bootstrap */
@@ -588,21 +588,21 @@ body {
 
 #bootstrap img {
     -webkit-transform: rotateY(-35deg) rotateX(15deg);
-            transform: rotateY(-35deg) rotateX(15deg);
+    transform: rotateY(-35deg) rotateX(15deg);
     max-width: 100%;
     border-radius: 10px;
     -webkit-box-shadow: 0 0 40px var(--shadow);
-            box-shadow: 0 0 40px var(--shadow);
+    box-shadow: 0 0 40px var(--shadow);
 }
 
 #bootstrap .col-md-5 div {
     width: 125%;
     -webkit-perspective-origin: left center;
-            perspective-origin: left center;
+    perspective-origin: left center;
     -webkit-perspective: 1500px;
-            perspective: 1500px;
+    perspective: 1500px;
     -webkit-transform-style: preserve-3d;
-            transform-style: preserve-3d;
+    transform-style: preserve-3d;
 }
 
 /* Carousel */
@@ -621,7 +621,7 @@ body {
 #carousel .row {
     position: relative;
     -webkit-box-shadow: 0 0 30px var(--shadow);
-            box-shadow: 0 0 30px var(--shadow);
+    box-shadow: 0 0 30px var(--shadow);
     border-radius: 7px;
 }
 
@@ -637,9 +637,9 @@ body {
     width: 100%;
     height: 100%;
     -o-object-fit: cover;
-       object-fit: cover;
+    object-fit: cover;
     -webkit-clip-path: circle(111.4% at 0 28%);
-            clip-path: circle(111.4% at 0 28%);
+    clip-path: circle(111.4% at 0 28%);
     position: absolute;
     -webkit-transition: opacity 0.3s;
     -o-transition: opacity 0.3s;
@@ -777,18 +777,18 @@ body {
 
 #pricing .pricing-card {
     -webkit-transform: scaleX(1.06);
-        -ms-transform: scaleX(1.06);
-            transform: scaleX(1.06);
+    -ms-transform: scaleX(1.06);
+    transform: scaleX(1.06);
     border-radius: 7px;
     overflow: hidden;
     -webkit-box-shadow: 0 0 40px 0px var(--shadow);
-            box-shadow: 0 0 40px 0px var(--shadow);
+    box-shadow: 0 0 40px 0px var(--shadow);
 }
 
 #pricing .pricing-standard {
     -webkit-transform-origin: left;
-        -ms-transform-origin: left;
-            transform-origin: left;
+    -ms-transform-origin: left;
+    transform-origin: left;
     z-index: 1;
     position: relative;
     background-color: var(--text-opposite);
@@ -796,8 +796,8 @@ body {
 
 #pricing .pricing-enterprice {
     -webkit-transform-origin: right;
-        -ms-transform-origin: right;
-            transform-origin: right;
+    -ms-transform-origin: right;
+    transform-origin: right;
     height: 500px;
 }
 
@@ -808,10 +808,10 @@ body {
 
 #pricing button:hover {
     -webkit-transform: unset;
-        -ms-transform: unset;
-            transform: unset;
+    -ms-transform: unset;
+    transform: unset;
     -webkit-box-shadow: unset;
-            box-shadow: unset;
+    box-shadow: unset;
     outline: none;
 }
 
@@ -929,7 +929,7 @@ body {
     /* Carousel */
     #carousel img {
         -webkit-clip-path: circle(105.5% at 0 36%);
-                clip-path: circle(105.5% at 0 36%);
+        clip-path: circle(105.5% at 0 36%);
     }
 }
 
@@ -959,21 +959,21 @@ body {
         display: flex;
         -webkit-box-orient: vertical;
         -webkit-box-direction: normal;
-            -ms-flex-direction: column;
-                flex-direction: column;
+        -ms-flex-direction: column;
+        flex-direction: column;
         -webkit-box-align: start;
-            -ms-flex-align: start;
-                align-items: flex-start;
+        -ms-flex-align: start;
+        align-items: flex-start;
         overflow: scroll;
         height: 500px;
         background-color: var(--text-opposite);
         width: 366px;
         -webkit-box-shadow: 0 0 50px var(--shadow);
-                box-shadow: 0 0 50px var(--shadow);
+        box-shadow: 0 0 50px var(--shadow);
         padding-top: 1.5rem;
         right: -10px;
         -webkit-animation: show-dropdowns 0.2s;
-                animation: show-dropdowns 0.2s;
+        animation: show-dropdowns 0.2s;
     }
     #navbar .dropdowns-hidden {
         display: none;
@@ -988,19 +988,19 @@ body {
         position: unset;
         width: unset;
         -webkit-transform: unset;
-            -ms-transform: unset;
-                transform: unset;
+        -ms-transform: unset;
+        transform: unset;
         -webkit-box-shadow: 0 5px 30px var(--shadow);
-                box-shadow: 0 5px 30px var(--shadow);
+        box-shadow: 0 5px 30px var(--shadow);
         padding: 1.75rem;
         display: block;
         -webkit-box-shadow: unset;
-                box-shadow: unset;
+        box-shadow: unset;
     }
     #navbar .my-dropdown:hover .my-dropdown-menu {
         display: block;
         -webkit-animation: unset;
-                animation: unset;
+        animation: unset;
     }
     #navbar .my-dropdown-menu:hover {
         display: block;
@@ -1036,7 +1036,7 @@ body {
     /* Carousel */
     #carousel img {
         -webkit-clip-path: ellipse(100% 100% at 0% 35%);
-                clip-path: ellipse(100% 100% at 0% 35%);
+        clip-path: ellipse(100% 100% at 0% 35%);
     }
     /* Focus */
     #focus h3 {
@@ -1058,7 +1058,7 @@ body {
     }
     #carousel img {
         -webkit-clip-path: unset;
-                clip-path: unset;
+        clip-path: unset;
     }
     /* Pricing */
     #pricing h3 {
@@ -1066,8 +1066,8 @@ body {
     }
     #pricing .pricing-card {
         -webkit-transform: unset;
-            -ms-transform: unset;
-                transform: unset;
+        -ms-transform: unset;
+        transform: unset;
     }
     #pricing .pricing-enterprice {
         height: 400px;
@@ -1107,12 +1107,12 @@ body {
 @-webkit-keyframes show {
     0% {
         -webkit-transform: translate(-50%, 20px);
-                transform: translate(-50%, 20px);
+        transform: translate(-50%, 20px);
         opacity: 0;
     }
     100% {
         -webkit-transform: translate(-50%, 0);
-                transform: translate(-50%, 0);
+        transform: translate(-50%, 0);
         opacity: 1;
     }
 }
@@ -1120,12 +1120,12 @@ body {
 @keyframes show {
     0% {
         -webkit-transform: translate(-50%, 20px);
-                transform: translate(-50%, 20px);
+        transform: translate(-50%, 20px);
         opacity: 0;
     }
     100% {
         -webkit-transform: translate(-50%, 0);
-                transform: translate(-50%, 0);
+        transform: translate(-50%, 0);
         opacity: 1;
     }
 }
@@ -1134,12 +1134,12 @@ body {
     0% {
         opacity: 0;
         -webkit-transform: translateY(20px);
-                transform: translateY(20px);
+        transform: translateY(20px);
     }
     100% {
         opacity: 1;
         -webkit-transform: translateY(0);
-                transform: translateY(0);
+        transform: translateY(0);
     }
 }
 
@@ -1147,12 +1147,12 @@ body {
     0% {
         opacity: 0;
         -webkit-transform: translateY(20px);
-                transform: translateY(20px);
+        transform: translateY(20px);
     }
     100% {
         opacity: 1;
         -webkit-transform: translateY(0);
-                transform: translateY(0);
+        transform: translateY(0);
     }
 }
 
